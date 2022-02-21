@@ -31,7 +31,7 @@
 				</div>
 				<div class="form-group">
 					<label for="">E-mail părinte/tutore legal:</label>
-					<input type="text" class="form-control" data-validation="email" id="email" name="email" required>
+					<input type="email" class="form-control" data-validation="email" id="email" name="email" required>
 				</div>
 				<hr><br>
 				<div class="form-group">
@@ -44,7 +44,7 @@
 				</div>
 				<div class="form-group">
 					<label for="">E-mail elev:</label>
-					<input type="text" class="form-control" data-validation="email" id="email_minor" name="email_minor" required>
+					<input type="email" class="form-control" data-validation="email" id="email_minor" name="email_minor" required>
 				</div>
 				<button>Generează acordul!</button>
 			</form>

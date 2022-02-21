@@ -3,13 +3,20 @@
 require_once("fpdf/fpdf.php");
 define('FPDF_FONTPATH', 'fpdf/font/');
 
+function filtrare($filter)
+{
+  $filter = trim($filter);
+  $filter = strip_tags($filter);
+  $filter = htmlspecialchars($filter);
+  return $filter;
+}
 
-$nume = $_POST['nume'];
-$email = $_POST['email'];
-$tel = $_POST['tel'];
-$nume_minor = $_POST['nume_minor'];
-$tel_minor = $_POST['tel_minor'];
-$email_minor = $_POST['email_minor'];
+$nume = filtrare($_POST['nume']);
+$email = filtrare($_POST['email']);
+$tel = filtrare($_POST['tel']);
+$nume_minor = filtrare($_POST['nume_minor']);
+$tel_minor = filtrare($_POST['tel_minor']);
+$email_minor = filtrare($_POST['email_minor']);
 
 
 
